@@ -1,4 +1,4 @@
-# Instructions
+# Instructions for designing testable code for InputBox and QuickInput
 
 1. Define an interface such as IAzureUserInput from https://github.com/microsoft/vscode-azuretools/blob/master/ui/index.d.ts
 2. Define a class used for interactive input of data such as https://github.com/microsoft/vscode-azuretools/blob/master/ui/src/AzureUserInput.ts
