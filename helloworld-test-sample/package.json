@@ -12,7 +12,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.helloWorld",
+		"onCommand:samples.quickInput"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -20,6 +21,10 @@
 			{
 				"command": "extension.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "samples.quickInput",
+				"title": "Quick Input Samples"
 			}
 		]
 	},
@@ -35,12 +40,20 @@
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^8.10.25",
-		"@types/vscode": "^1.32.0",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",
 		"source-map-support": "^0.5.12",
 		"tslint": "^5.16.0",
 		"typescript": "^3.5.1",
-		"vscode-test": "^1.0.0"
+		"vscode-test": "^1.0.0",
+		"sinon": "^7.5.0",
+		"vscode-azureextensiondev": "^0.2.3",
+		"webpack": "^4.40.2",
+		"webpack-cli": "^3.3.8"
+	},
+	"dependencies": {
+		"@types/sinon": "^7.5.0",
+		"@types/webpack": "^4.39.2",
+		"vscode-azureextensionui": "^0.28.2"
 	}
 }
